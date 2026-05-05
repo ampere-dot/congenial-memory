@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 PONG Game</h1>
+        
+        <div class="game-wrapper">
+            <div class="scoreboard">
+                <div class="score-box">
+                    <div class="score-label">Player</div>
+                    <div class="score-value" id="playerScore">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">Computer</div>
+                    <div class="score-value" id="computerScore">0</div>
+                </div>
+            </div>
+
+            <canvas id="pongCanvas" width="800" height="400"></canvas>
+
+            <div class="controls">
+                <button id="startBtn">Start Game</button>
+                <button id="pauseBtn" disabled>Pause</button>
+                <button id="resetBtn">Reset Score</button>
+            </div>
+
+            <div class="controls-info">
+                <strong>🎮 Controls:</strong>
+                <br>• Use <strong>Arrow Keys ↑/↓</strong> to move your paddle
+                <br>• Or move your <strong>mouse vertically</strong> over the canvas
+                <br>• Computer automatically controls the right paddle
+            </div>
+
+            <div class="instructions">
+                <h3>📋 How to Play:</h3>
+                <ul>
+                    <li>Click <strong>Start Game</strong> to begin playing</li>
+                    <li>Control the left paddle with arrow keys or mouse movement</li>
+                    <li>The computer controls the right paddle automatically</li>
+                    <li>When the ball passes your opponent, you score a point</li>
+                    <li>Use <strong>Pause</strong> to pause/resume the game</li>
+                    <li>Click <strong>Reset Score</strong> to clear the scoreboard</li>
+                    <li>The ball speeds up slightly with each paddle hit</li>
+                    <li>Ball angle changes based on where it hits the paddle</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
